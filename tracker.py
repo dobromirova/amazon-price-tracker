@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
+import time
 
 URL = 'https://www.amazon.es/Corsair-Vengeance-RGB-Pro-Entusiasta/dp/B07D1XCKWW/ref=sr_1_46?__mk_es_ES=ÅMÅŽÕÑ&crid=284PZ7Q62IG00&dib=eyJ2IjoiMSJ9.VpDBIGKuOW_UjqF1ISKevG1gKl0Q_GuD1Ylfeg6F4LfG36VG88ihr2PkiNK-Ew0wNynwxPpU9xcV7GWSdUergJp81RAYF1jdKMW9By_mgH4GZR0BExI8sgBaWhD0K5l4LBWbUhrNdihO9HMzATmB684lWkuaLYgkv2g1RdfgdDDfD6yjeXbbO9genGwCVr5-RR_iXmjuUyorjsHZyru-_ETvSxqCYnUiK0aKkEA30Mv5VJHoElJN3jvRsuwyW5anhem84dVS7hZ1TKhxy5ajg4Dhx86nb55cKEe5GcI92j4.eU5srunLBp9wi-cptfkUpnd2k6Qoy3vQ-gTMvkwSLAg&dib_tag=se&keywords=ddr4%2Bram&qid=1788015933&sprefix=ddr4%2Bram%2Caps%2C98&sr=8-46&th=1'
 
@@ -64,4 +65,6 @@ def send_mail():
     server.quit() # Closes connection
 
 
-check_price()
+#while(True):
+#     check_price()
+#     time.sleep(60 * 60)
